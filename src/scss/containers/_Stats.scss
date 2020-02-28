@@ -1,0 +1,15 @@
+$stats-padding: 50px 0!default;
+$title-padding: 20px!default;
+
+.stats {
+  position: relative;
+  padding: $stats-padding;
+
+  h4 {
+    padding-bottom: $title-padding;
+  }
+
+  .stats-content {
+    display: flex;
+  }
+}

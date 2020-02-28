@@ -1,0 +1,39 @@
+$cell-size: 50px!default;
+$cell-border-radius: 4px!default;
+$cell-text-color: #fff!default;
+$cell-size-small: 28px!default;
+
+.board-cell {
+  @include flex-center;
+  position: relative;
+  width: $cell-size;
+  height: $cell-size;
+  border-radius: $cell-border-radius;
+  flex: 0 0 $cell-size;
+  color: $cell-text-color;
+
+  &.hit {
+    animation: hit 4s ease;
+  }
+
+  &.small {
+    width: $cell-size-small;
+    height: 100%;
+    flex: 0 0 $cell-size-small;
+    border-radius: 0;
+  }
+
+  span {
+    font-weight: bold;
+    opacity: 1;
+  }
+}
+
+@keyframes hit {
+  0%   {backtround: #16a085}
+  25%  {background: #8e44ad}
+  50%  {backtround: #16a085}
+  75%  {background: #8e44ad}
+  90%  {background: #16a085}
+  100% {background: transparent}
+}

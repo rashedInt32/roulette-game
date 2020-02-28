@@ -1,0 +1,10 @@
+$board-width: 60%!default;
+
+.game-board {
+  position: relative;
+  max-width: $board-width;
+
+  .cell-content {
+    @include display(flex);
+  }
+};

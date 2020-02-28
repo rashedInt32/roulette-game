@@ -1,0 +1,126 @@
+.board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  flex: 0 0 50px;
+  color: #fff; }
+  .board-cell.hit {
+    animation: hit 4s ease; }
+  .board-cell.small {
+    width: 28px;
+    height: 100%;
+    flex: 0 0 28px;
+    border-radius: 0; }
+  .board-cell span {
+    font-weight: bold;
+    opacity: 1; }
+
+@keyframes hit {
+  0% {
+    backtround: #16a085; }
+  25% {
+    background: #8e44ad; }
+  50% {
+    backtround: #16a085; }
+  75% {
+    background: #8e44ad; }
+  90% {
+    background: #16a085; }
+  100% {
+    background: transparent; } }
+
+.event-list {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  margin-bottom: 5px; }
+  .event-list p {
+    margin: 0; }
+
+header {
+  padding: 10px 0; }
+
+table tr td {
+  padding: 10px 15px;
+  border-top: 1px solid #999; }
+
+table th {
+  text-align: center;
+  padding: 0;
+  border-top: 1px solid #999;
+  height: 40px; }
+  table th > span {
+    font-size: 13px; }
+
+table .cold {
+  background-color: #D9EDF7; }
+
+table .hot {
+  background-color: #F2DEDE; }
+
+.spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff; }
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px; }
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite; }
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  100% {
+    transform: rotate(1800deg); } }
+
+.game-board {
+  position: relative;
+  max-width: 60%; }
+  .game-board .cell-content {
+    display: flex;
+    flex-wrap: wrap; }
+
+.stats {
+  position: relative;
+  padding: 50px 0; }
+  .stats h4 {
+    padding-bottom: 20px; }
+  .stats .stats-content {
+    display: flex; }
+
+.events {
+  min-width: 40%;
+  width: 100%; }
+
+.title {
+  padding-bottom: 20px; }

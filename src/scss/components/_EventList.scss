@@ -1,0 +1,15 @@
+$event-padding: 10px 20px !default;
+$event-border-radius: 4px !default;
+$event-border: 1px solid #999!default;
+$event-margin: 5px!default;
+
+.event-list {
+  padding: $event-padding;
+  border-radius: $event-border-radius;
+  border: $event-border;
+  margin-bottom: $event-margin;
+
+  p {
+    margin: 0;
+  }
+}
